@@ -67,17 +67,6 @@ app.get("/console/:name", async (req,res)=>{
     res.render("name", {data: data, name: name})
 })
 
-app.get("/getinfo/:name", async (req,res)=>{
-    let name = req.params.name
-    const files = await GridFile.find( {"filename": {"$regex": name + "+"}}).sort({ uploadDate: -1 }).limit(10);
-    data = files.map((file)=>{
-        return "/getfile/" + file._id + "/" + file.filename
-    })
-   
-  
-    
-    
-})
 app.get('/getfile/:id/:name', async (req, res, nxt) => {
     try {
       const { id, name } = req.params
