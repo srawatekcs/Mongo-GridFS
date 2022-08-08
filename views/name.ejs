@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Console</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1320/1320457.png">
+    <!-- CSS only -->
+
+    <style>
+        @import url(https://unpkg.com/@webpixels/css@1.1.5/dist/index.css);
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css");
+    </style>
+   <!-- JavaScript Bundle with Popper -->
+   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<!-- Dashboard -->
+<div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+    <!-- Vertical Navbar -->
+    <nav class="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg" id="navbarVertical">
+        <div class="container-fluid">
+            <!-- Toggler -->
+            <button class="navbar-toggler ms-n2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand -->
+            <p class="navbar-brand py-lg-2 mb-lg-5 px-lg-6 me-0" style="text-align: center;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1320/1320457.png" alt="...">
+            </p>
+            <!-- User menu (mobile) -->
+            <div class="navbar-user d-lg-none">
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <!-- Toggle -->
+                    <a href="#" id="sidebarAvatar" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar-parent-child">
+                          
+                            <span class="avatar-child avatar-badge bg-success"></span>
+                        </div>
+                    </a>
+                    <!-- Menu -->
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarAvatar">
+                        <a href="#" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <a href="#" class="dropdown-item">Billing</a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="sidebarCollapse" style="background-color: rgb(47,90,125);">
+                <!-- Navigation -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;" onMouseOver="this.style.color='black'"
+                        onMouseOut="this.style.color='white'">
+                            <i class="bi bi-house" style="color: white;"></i> Dashboard
+                        </a>
+                    </li>
+                
+                  
+                   
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;"  onMouseOver="this.style.color='black'"
+                        onMouseOut="this.style.color='white'" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <i class="bi bi-people" style="color: white;" ></i> Users
+                        </a>
+                    </li>
+                   
+                </ul>
+                <!-- Divider -->
+                <hr class="navbar-divider my-5 opacity-20">
+                <!-- Navigation -->
+               
+                <!-- Push content down -->
+                <div class="mt-auto"></div>
+                <!-- User (md) -->
+                <ul class="navbar-nav">
+                  
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main content -->
+    <div class="h-screen flex-grow-1 overflow-y-lg-auto">
+        <!-- Header -->
+        <header class="bg-surface-primary border-bottom pt-6">
+            <div class="container-fluid">
+                <div class="mb-npx">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+                            <!-- Title -->
+                            <!-- <h1 class="h2 mb-0 ls-tight">Application</h1> -->
+                        </div>
+                        <!-- Actions -->
+                        
+                        
+                                
+                        <div class="col-sm-12 col-12 text-sm-end">
+                            
+                            <div class="mx-n1">
+                                <!-- <a href="#" class="btn d-inline-flex btn-sm btn-neutral border-base mx-1">
+                                    <span class=" pe-2">
+                                        <i class="bi bi-pencil"></i>
+                                    </span>
+                                    <span>Edit</span>
+                                </a> -->
+                               
+                            
+                               
+                                <a href="#" class="btn d-inline-flex btn-sm btn-secondary mx-1">
+                                    <span class=" pe-2">
+                                        <i class="bi"></i>
+                                    </span>
+                                    <span>Hi, <%= "Admin" %></span>
+                                </a>
+                                
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nav -->
+                    <ul class="nav nav-tabs mt-4 overflow-x border-0">
+                      
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="py-6 bg-surface-secondary">
+            <div class="container-fluid">
+                <!-- Card stats -->
+            
+                <div class="card shadow border-0 mb-7">
+                    <div class="card-header">
+                        <h5 class="mb-0">Client Name: <%= name %></h5>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-nowrap">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Images</th>
+                                      
+                                    <th></th>
+                                </tr>
+                            </thead>
+                         
+                            <tbody>
+
+                                <% for(let i=0; i<data.length; i++){ %>
+                                    <tr>
+                                        <td><img src="<%=data[i]%>" height="500px" width="500px"></td>
+                                    
+                                </tr>
+                                 <%}%>
+
+                                
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                  
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Single User Command</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     
+            <div class="form-group">
+            
+              <input type="text" class="form-control" id="eId" aria-describedby="emailHelp" placeholder="Enter Employee ID or *">
+                
+            </div>
+            <br>
+          
+            <div class="form-group">
+           
+              <input type="text" class="form-control" id="command" placeholder="Enter Command">
+            </div>
+            <br>
+            <div class="form-group">
+           
+              <input type="text" class="form-control" id="attendees" placeholder="Enter Attendees">
+              
+            </div>
+            
+          
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="add()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send Notifications</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     
+            <div class="form-group">
+            
+              <input type="text" class="form-control" id="eId3" aria-describedby="emailHelp" placeholder="Enter Employee ID or *">
+              <br>
+             <button type="button" class="btn btn-primary" onclick="searchnotif()">Search</button>
+            </div>
+            <br>
+            <div class="form-group">
+            
+              <input type="text" class="form-control" id="eIdfinal3" aria-describedby="emailHelp" placeholder="" disabled="true">
+            </div>
+            <br>
+          
+            <div class="form-group">
+           
+              <input type="text" class="form-control" id="title" placeholder="Enter Title">
+            </div>
+            <br>
+            <div class="form-group">
+           
+              <input type="text" class="form-control" id="description" placeholder="Enter Description">
+              
+            </div>
+            
+          
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="clearfield()">Clear</button>
+        <button type="button" class="btn btn-primary" onclick="sendNotification()">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Multi User Command</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     
+            <div class="form-group">
+            
+              <input type="text" class="form-control" id="eId2" aria-describedby="emailHelp" placeholder="Enter name">
+              <br>
+             <button type="button" class="btn btn-primary" onclick="search2()">Search</button>
+            </div>
+            <br>
+            <div class="form-group">
+            
+              <input type="text" class="form-control" id="eIdfinal" aria-describedby="emailHelp" placeholder="" disabled="true">
+            </div>
+            <br>
+          
+            <div class="form-group">
+           
+              <input type="text" class="form-control" id="command2" placeholder="Enter Command">
+            </div>
+            <br>
+            <div class="form-group">
+           
+              <input type="text" class="form-control" id="attendees2" placeholder="Enter Attendees">
+              
+            </div>
+            
+          
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="clearfield()">Clear</button>
+        <button type="button" class="btn btn-primary" onclick="add2()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search Device</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+              
+                <input type="text" class="form-control" id="eIdToSearch" aria-describedby="emailHelp" placeholder="Enter Name" >
+               
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="search()">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add commands from CSV</h5>
+      
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="upload">
+            <div class="form-group">
+                 <input type="file" class="form-control" name="empcsv" id="empcsv" aria-describedby="emailHelp" placeholder="Enter Employee ID or *">
+                <h6 class="text-muted">Make sure your csv file has <strong>empId</strong> column. </h6>
+                  
+              </div>
+              <br>
+            <div class="form-group">
+                 <input type="file" class="form-control" name="atndcsv" id="atndcsv" aria-describedby="emailHelp" placeholder="Enter Employee ID or *">
+                <h6 class="text-muted">Make sure your csv file has <strong>attendees</strong> column. </h6>
+                  
+              </div>
+              <br>
+            
+              <div class="form-group">
+             
+                <input type="text" class="form-control" id="commandupload" name="command"  placeholder="Enter Command">
+              </div>
+              <br>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" onclick="upload()">Add</button>
+              </div>
+            </form>
+
+              
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  
+<script>
+
+  
+   
+       
+    function search()
+      {
+          let eIdToSearch = document.getElementById("eIdToSearch").value;
+            if(eIdToSearch == "")
+            {
+                alert("Please fill all the fields");
+                return;
+            }
+            window.location.href = "/console/" + eIdToSearch;
+      }
+   
+        
+       
+</script>
+</body>
+</html>
